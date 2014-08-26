@@ -58,6 +58,10 @@ body {
   height: 700px;
 }
 
+.carousel-caption {
+    bottom: 170px;
+}
+
 
 
 /* MARKETING CONTENT
