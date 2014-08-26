@@ -36,6 +36,10 @@ html {
     left: 350px;
 }
 
+h1 {
+    font-size: 48px;
+}
+
 .scroll-section {
 	padding: 75px 0 75px 0;
 	height: 100%;
