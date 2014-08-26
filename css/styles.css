@@ -23,6 +23,10 @@ html {
 	}
 }
 
+.navbar.navbar-inverse.navbar-fixed-top {
+    padding: 0px;
+}
+
 .scroll-section {
 	padding: 75px 0 75px 0;
 	height: 100%;
