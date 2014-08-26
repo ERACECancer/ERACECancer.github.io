@@ -27,6 +27,15 @@ html {
     padding: 0px;
 }
 
+.collapse.navbar-collapse.navbar-ex1-collapse {
+    position: absolute;
+    left: 500px;
+}
+.navbar-header.page-scroll {
+    position: absolute;
+    left: 350px;
+}
+
 .scroll-section {
 	padding: 75px 0 75px 0;
 	height: 100%;
