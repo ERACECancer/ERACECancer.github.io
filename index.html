@@ -18,12 +18,12 @@
 
     <div id="navcontainer">
 <ul id="navlist">
-<li class="page-scroll"><a href="#3-column"><strong>ERACE Cancer</strong></a></li>
-<li class="page-scroll"><a href="#3-column">Cancer 101</a></li>
-<li class="page-scroll"><a href="#get-involved">Oral Cancer Screening Info</a>
-<li class="page-scroll"><a href="#get-involved">Get Involved</a>
+<li class="page-scroll"><a data-scroll href="#navcontainer"><strong>ERACE Cancer</strong></a></li>
+<li class="page-scroll"><a data-scroll href="">Cancer 101</a></li>
+<li class="page-scroll"><a data-scroll href="#cancer-101">Oral Cancer Screening Info</a>
+<li class="page-scroll"><a data-scroll href="#get-involved">Get Involved</a>
 <li class="page-scroll"><a href="pages/modules.html">Educational Modules</a>
-<li class="page-scroll"><a href="#about-us">About Us</a></li>
+<li class="page-scroll"><a data-scroll href="#about-us">About Us</a></li>
 </ul>
 </div>
         <!-- Carousel
@@ -145,5 +145,10 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        smoothScroll.init();
+    </script>
 </body>
 </html>
