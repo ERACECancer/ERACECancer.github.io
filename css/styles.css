@@ -44,6 +44,14 @@ h2 {
 	text-align: center;
 }
 
+.featurette-heading{
+	margin-top:0px !important;
+}
+
+img.featurette-image.img-responsive {
+    padding: 20px 0 0 0;
+}
+
 .col-lg-4 {
 }
 img.img-circle {
