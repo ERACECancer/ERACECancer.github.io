@@ -71,6 +71,18 @@ eraceApp.config(['$routeProvider', function($routeProvider) {
             controller : 'educationalModulesController'
         })
 
+        .when('/cancer101', {
+            templateUrl : './templates/cancer101.htm'
+        })
+
+        .when('/disparity', {
+            templateUrl : './templates/disparity.htm'
+        })
+
+        .when('/community', {
+            templateUrl : './templates/community.htm'
+        })
+
         .otherwise({
             redirectTo : '/'
         })
