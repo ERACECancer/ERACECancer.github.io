@@ -1,0 +1,104 @@
+<style>
+  #firstChat #thirdChat #fifthChat {
+    float: left;
+  }
+
+  #secondChat #fourthChat {
+    float: right;
+  }
+
+  .cardView {
+    padding: 10px;
+    opacity: 0;
+    box-shadow: 0px 2px 2px;
+  }
+
+  .success {
+    margin-bottom:20px;
+    opacity: 0;
+  }
+
+  .danger {
+    background-color: red;
+    margin-bottom:20px;
+    opacity: 0;
+    font-size: 18pt;
+    width: 40%;
+  }
+
+  .container {
+    border-radius: 10px;
+    padding: 5px 50px 5px 50px;
+  }
+
+.talkbubble {
+  padding:20px;
+   width: 60%;
+   height: auto;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+   opacity:0;
+}
+.talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid rgba(0, 130, 195, 0.76);
+   border-bottom: 13px solid transparent;
+   opacity:1;
+}
+
+.talkbubbleRight {
+  padding:20px;
+   width: 60%;
+   height: auto;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+   opacity:0;
+}
+.talkbubbleRight:before {
+   content:"";
+   position: absolute;
+   left: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid rgb(211, 211, 211);
+   border-bottom: 13px solid transparent;
+   opacity:1;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); /* IE 9 */
+    -webkit-transform:rotate(180deg)
+}
+
+#cpaButton {
+  opacity: 0;
+}
+
+</style>
+
+<div class="container">
+  <h5 class="talkbubble" id="firstChat" style="margin-top: -10px; float:left; background-color:rgba(0, 130, 195, 0.76); color: white"></h5>
+  <!-- <h5 class="cardView" id="firstChat" style="float:left; background-color:rgba(0, 130, 195, 0.76); color: white"></h5> -->
+  <br>
+  <h5 class="talkBubbleRight" id="secondChat" style="margin-top: -10px; float:right;  background-color:rgb(211, 211, 211);"></h5>
+  <br>
+  <h5 class="talkBubble" id="thirdChat" style="margin-top: -10px; float:left; background-color:rgba(0, 130, 195, 0.76); color: white"></h5>
+  <br>
+  <h5 class="talkBubbleRight" id="fourthChat" style="margin-top: -10px; float:right;  background-color:rgb(211, 211, 211);"></h5>
+  <br>
+  <h5 class="talkBubble" id="fifthChat" style="margin-top: -10px; float:left; background-color:rgba(0, 130, 195, 0.76); color: white"></h5>
+  <br>
+  <br>
+  <button class="success" ng-click="resolutionButtonClick()" id="resolutionButton">Great, problem solved.</button>
+  <button class="danger" ng-click="cpaButtonClick()" id="cpaButton">I'd prefer an expert.</button>
+</div>
