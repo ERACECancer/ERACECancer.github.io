@@ -40,6 +40,20 @@ h1 {
     font-size: 48px;
 }
 
+h2 {
+	text-align: center;
+}
+
+.col-lg-4 {
+}
+img.img-circle {
+    width: 90%;
+    padding: 0 20px 0 20px;
+}
+a.btn.btn-info {
+    width: 100%;
+}
+
 .scroll-section {
 	padding: 75px 0 75px 0;
 	height: 100%;
