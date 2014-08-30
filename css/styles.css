@@ -9,6 +9,10 @@ html {
 	height: 100%;
 }
 
+.container {
+	width: 100%;
+}
+
 @media(min-width:767px) {
 	.navbar {
 		padding: 20px 0;
@@ -135,4 +139,73 @@ footer a:hover {
 
 #closing {
 	margin-top: 20px
+}
+
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/*p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}*/
+
+
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}*/
+
+.text-center {
+	border: none;
+}
+
+.footer-save {
+	margin-bottom: -200px;
+}
+
+.cancer-section {
+    padding: 100px 0;
+}
+
+.cancer-section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.cancer-section.prostate {
+    color: #fff;
+    background: #18bc9c;
+}
+
+.cancer-section.cervical {
+	color: #fff;
+	background: #0688cc;
+}
+
+.cancer-section.stomach {
+	color: #fff;
+	background:#FF7460;
+}
+
+
+@media(max-width:767px) {
+    .cancer-section {
+        padding: 75px 0;
+    }
+
+    .cancer-section.first {
+        padding-top: 75px;
+    }
 }
