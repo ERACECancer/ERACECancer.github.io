@@ -197,6 +197,9 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }*/
+/*.floating-nav {
+	margin-left: -20px;
+}*/
 
 ul #floating-link {
     margin-left: -70px;
@@ -204,7 +207,7 @@ ul #floating-link {
 }
 
 .cancer-section {
-    margin-top: -50px;
+    margin-top: -110px;
 }
 
 .text-center {
