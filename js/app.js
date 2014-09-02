@@ -1,3 +1,5 @@
+$(".navbar-fixed-top").addClass('animated fadeInDown');
+
 var eraceApp = angular.module('eraceApp', ['ngRoute']);
 
 //search controller
