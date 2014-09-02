@@ -243,6 +243,20 @@ ul #floating-link {
 	background:#FF7460;
 }
 
+.cancer-section.oral {
+	background: #FFC912;
+	color: #403204;
+}
+
+.cancer-section.colorectal {
+	background: #00FF80;
+	color: #00783C;
+}
+
+.cancer-section.liver {
+	background:#7F1E54;
+	color: #FF92FF;
+}
 
 @media(max-width:767px) {
     .cancer-section {
