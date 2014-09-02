@@ -14,7 +14,6 @@ eraceApp.controller('homeController', function($scope) {
   // }, 2000);
 });
 
-
 //controllers definition
 eraceApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
@@ -40,8 +39,8 @@ eraceApp.config(['$routeProvider', function($routeProvider) {
             templateUrl : './templates/community.htm'
         })
 
-        .when('/research', {
-            templateUrl : './templates/research.htm'
+        .when('/getinvolved', {
+            templateUrl : './templates/getinvolved.htm'
         })
 
         .otherwise({
