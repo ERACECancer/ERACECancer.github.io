@@ -244,7 +244,7 @@ ul #floating-link {
 }
 
 .cancer-section.oral {
-	background: #FFC912;
+	background: #FFDC65;
 	color: #403204;
 }
 
@@ -256,6 +256,10 @@ ul #floating-link {
 .cancer-section.liver {
 	background:#7F1E54;
 	color: #FF92FF;
+}
+
+#breast-risk-and-disparities {
+	padding-bottom: 30px;
 }
 
 @media(max-width:767px) {
