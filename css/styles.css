@@ -205,9 +205,14 @@ h6 {
 	margin-left: -20px;
 }*/
 
+img #flowchart-img {
+	width: 180px !important;
+}
+
+
 ul #floating-link {
     margin-left: -70px;
-    font-size: 9pt;
+    font-size: 11pt;
 }
 
 .cancer-section {
@@ -277,7 +282,7 @@ img.img-circle.pull-right {
 }
 
 .cancer-section.lung {
-	    background: #FAA982;
+	    background: #B1E6FF;
     color: white;
 }
 
