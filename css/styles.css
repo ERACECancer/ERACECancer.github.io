@@ -224,6 +224,7 @@ ul #floating-link {
 
 .cancer-section {
     padding: 100px 0;
+	height: 800px;
 }
 
 .cancer-section h2 {
@@ -248,7 +249,7 @@ ul #floating-link {
 }
 
 .cancer-section.oral {
-	background: #FFDC65;
+	background: #FFEEB4;
 	color: #403204;
 }
 
@@ -258,8 +259,13 @@ ul #floating-link {
 }
 
 .cancer-section.liver {
-	background:#7F1E54;
-	color: #FF92FF;
+	background:#A088FF;
+	color: white;
+}
+
+.cancer-section.lung {
+	    background: #FAA982;
+    color: white;
 }
 
 #breast-risk-and-disparities {
@@ -274,4 +280,9 @@ ul #floating-link {
     .cancer-section.first {
         padding-top: 75px;
     }
+}
+
+.btn-primary {
+	background: #46b8da;
+	border-color: #46b8da;
 }
