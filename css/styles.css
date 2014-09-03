@@ -222,9 +222,17 @@ ul #floating-link {
 	margin-bottom: -200px;
 }
 
+img.img-circle.pull-right {
+	width: 175px;
+}
+
 .cancer-section {
     padding: 100px 0;
 	height: 800px;
+}
+
+#square {
+	border-radius: 0 !important;
 }
 
 .cancer-section h2 {
