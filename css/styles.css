@@ -233,6 +233,11 @@ img.img-circle.pull-right {
 
 #square {
 	border-radius: 0 !important;
+	margin-right: 25%;
+}
+
+#arbor {
+	margin-right: 25%;
 }
 
 .cancer-section h2 {
