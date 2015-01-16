@@ -33,7 +33,6 @@ html {
 
 .floating-navbar a:hover {
 	text-decoration: none;
-	/*background-color: black;*/
 	color: #CCC;
 }
 
@@ -47,23 +46,8 @@ html {
 }
 
 li a:hover {
-	text-decoration: none;
-	/*background-color: black;*/
+	text-decoration: none
 	color: #CCC;
-}
-
-@media(min-width:767px) {
-	.navbar {
-		padding: 20px 0;
-		-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-		-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-		transition: background .5s ease-in-out,padding .5s ease-in-out;
-	}
-
-	.top-nav-collapse {
-		/* Customize the look and feel of the collapsed top nav here */
-		padding: 0;
-	}
 }
 
 .navbar.navbar-inverse.navbar-fixed-top {
@@ -89,6 +73,7 @@ h2 {
 
 .featurette-heading{
 	margin-top:0px !important;
+  font-weight: 200;
 }
 
 img.featurette-image.img-responsive {
@@ -176,35 +161,6 @@ footer a:hover {
 	margin-top: 20px
 }
 
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-`/*p {
-    font-size: 20px;
-}
-
-p.small {
-    font-size: 16px;
-}*/`
-
-
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}*/
-/*.floating-nav {
-	margin-left: -20px;
-}*/
-
 img #flowchart-img {
 	width: 180px !important;
 }
@@ -290,17 +246,7 @@ img.img-circle.pull-right {
 	padding-bottom: 30px;
 }
 
-@media(max-width:767px) {
-    .cancer-section {
-        padding: 75px 0;
-    }
-
-    .cancer-section.first {
-        padding-top: 75px;
-    }
-}
-
 .btn-primary {
-	background: #46b8da;
-	border-color: #46b8da;
+  background: #46b8da;
+  border-color: #46b8da;
 }
