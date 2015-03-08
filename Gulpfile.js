@@ -1,24 +1,39 @@
 var gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    minifyCSS = require('gulp-minify-css'),
+    watch = require('gulp-watch'),
+    cssmin = require('gulp-cssmin'),
+    rename = require("gulp-rename"),
+    imagemin = require('gulp-imagemin'), 
+    pngquant = require('imagemin-pngquant'),
     clean = require('gulp-clean');
 
-gulp.task('concat', function() {
-  gulp.src('./css/*.css')
-    .pipe(concat('all.css'))
-    .pipe(gulp.dest('./temp/'))
+
+gulp.task('imagemin', function () {
+  gulp.src('./assets/img*.jpg')
+      .pipe(imagemin({
+          progressive: true,
+          svgoPlugins: [{removeViewBox: false}],
+          use: [pngquant()]
+      }))
+      .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('minify-css', ['concat'], function() {
-  gulp.src('./temp/all.css')
-    .pipe(minifyCSS({keepBreaks:true}))
-    .pipe(concat('all.min.css'))
-    .pipe(gulp.dest('./dist'))
+gulp.task('minify', function () {
+    gulp.src('./dist/main.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('clean', function () {
-    gulp.src(['./temp'], {read: false})
+    gulp.src(['./dist/*.css', '!./dist/main.min.css'], {read: false})
         .pipe(clean());
 });
 
-gulp.task('default', ['minify-css']);
+gulp.task('watch', function() {
+    // TODO: add watcher
+    // .pipe(watch('./*.less'))
+    // .pipe(recess())
+    // .pipe(recess.reporter())
+});
+
+gulp.task('default', ['index', 'templates', 'minify', 'imagemin', 'clean']);

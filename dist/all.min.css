@@ -510,7 +510,7 @@ img.img-circle{width:90%;padding:0 20px}
 li{display:inline}
 li a{text-decoration:none;color:#FFF;padding:.2em 1em}
 li a:hover{text-decoration:none;color:#CCC}
-footer{color:#333;margin-top:200px;padding:20px 20px 10px;text-align:center;background:#080808;width:100%;height:100px}
+footer{color:#333;padding:20px 20px 10px;text-align:center;background:#080808;width:100%;height:100px}
 footer section{color:#999}
 footer a{border-bottom:1px #428BCA dotted;text-decoration:none}
 footer a:hover{text-decoration:none;border-bottom:none}
