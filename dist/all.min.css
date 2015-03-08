@@ -504,13 +504,13 @@ img.img-circle{width:90%;padding:0 20px}
 .scroll-section{padding:75px 0;height:100%;background:#EEE}
 .alt{background:#DDD}
 .internal-text{padding:10px 40px}
-.featurette-heading{font-weight:200}
+.featurette-heading{font-weight:700}
 .article-header{padding-top:70px}
 #navcontainer ul{padding:20px 0;margin:0;list-style-type:none;background-color:#000;color:#FFF;width:100%;text-align:center}
 li{display:inline}
 li a{text-decoration:none;color:#FFF;padding:.2em 1em}
 li a:hover{text-decoration:none;color:#CCC}
-footer{color:#333;margin-top:200px;padding:20px 20px 10px;text-align:center;background:#080808;width:100%;height:200px}
+footer{color:#333;margin-top:200px;padding:20px 20px 10px;text-align:center;background:#080808;width:100%;height:100px}
 footer section{color:#999}
 footer a{border-bottom:1px #428BCA dotted;text-decoration:none}
 footer a:hover{text-decoration:none;border-bottom:none}
