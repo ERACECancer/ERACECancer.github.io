@@ -8,9 +8,12 @@
   },
   "devDependencies": {
     "gulp": "~3.8.10",
-    "gulp-concat": "~2.4.3",
+    "gulp-concat": "~2.5.2",
     "gulp-minify-css": "~0.3.12",
-    "gulp-clean": "~0.3.1"
+    "gulp-clean": "~0.3.1",
+    "gulp-watch": "~4.1.1",
+    "gulp-imagemin": "~2.2.1",
+    "imagemin-pngquant": "~4.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

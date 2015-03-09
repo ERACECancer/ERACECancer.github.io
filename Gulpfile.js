@@ -30,10 +30,8 @@ gulp.task('clean', function () {
 });
 
 gulp.task('watch', function() {
-    // TODO: add watcher
-    // .pipe(watch('./*.less'))
-    // .pipe(recess())
-    // .pipe(recess.reporter())
+    // gulp.watch('scripts/*.js', ['lint', 'scripts']);
+    // gulp.watch('scss/*.scss', ['sass']);
 });
 
 gulp.task('default', ['index', 'templates', 'minify', 'imagemin', 'clean']);
