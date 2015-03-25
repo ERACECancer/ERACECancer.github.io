@@ -1,28 +1,15 @@
 <?php
+	if($_POST["submit"]) {
+    $recipient="piperchester@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
 
-include 'config.php';
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
-error_reporting (E_ALL ^ E_NOTICE);
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-$post = (!empty($_POST)) ? true : false;
-
-if($post) {
-
-	$name = stripslashes($_POST['name']);
-	$email = trim($_POST['email']);
-	$subject = stripslashes($_POST['subject']);
-	$message = stripslashes($_POST['message']);
-	$error = '';
-
-	if(!$error) {
-			$mail = mail(WEBMASTER_EMAIL, $subject, $message,
-		     "From: ".$name." <".$email.">\r\n"
-		    ."Reply-To: ".$email."\r\n"
-		    ."X-Mailer: PHP/" . phpversion());
-
-			if ($mail) {
-				echo 'OK';
-			}
-		}
-	}
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
 ?>
