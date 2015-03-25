@@ -185,3 +185,10 @@ body {
 footer {
     padding: 30px 0;
 }
+
+/* Mobile */
+@media (max-width: 400px) {
+    #eraceImage {
+        background-size: 285px 235px;
+    }
+}
