@@ -58,14 +58,7 @@ body {
     color: rgba(0,0,0,0.7);
 }
 
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
-}
-
 /* Side Menu */
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -149,8 +142,6 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
-
 .header {
     display: table;
     position: relative;
@@ -164,17 +155,11 @@ hr.small {
 }
 
 /* About */
-
 .about {
     padding: 50px 0;
 }
 
-.thinking-image {
- background: url(../img/awareness.svg) no-repeat center center scroll;   
-}
-
 /* Services */
-
 .services {
     padding: 50px 0;
 }
@@ -183,22 +168,7 @@ hr.small {
     margin-bottom: 30px;
 }
 
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 /* Portfolio */
-
 .portfolio {
     padding: 50px 0;
 }
@@ -212,17 +182,6 @@ hr.small {
     border-radius: 35px;    
 }
 
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-/* Footer */
 footer {
     padding: 30px 0;
 }
