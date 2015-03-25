@@ -1,43 +1,256 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="eraceApp">
+<html lang="en">
 <head>
-    <title>ERACE Cancer</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content=""> 
-    <link rel="icon" type="image/png" href="img/favicon.png?v=3">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/all.min.css">
+    <meta name="author" content="">
+
+    <title>ERACE Cancer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-    <div class="navbar-fixed-top" id="navcontainer">
-        <ul id="navlist">
-            <li class="page-scroll"><a data-scroll href="#/#carousel"><strong>ERACE Cancer</strong></a></li>
-            <li class="page-scroll"><a data-scroll href="#3-column">Cancer 101</a></li>
-            <li class="page-scroll"><a data-scroll href="#oral-cancer-screening">Oral Cancer Screening Info</a></li>
-            <li class="page-scroll"><a data-scroll href="#about-us">About Us</a></li>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Home</a>
+            </li>
+            <li>
+                <a href="#about">About Us</a>
+            </li>
+            <li>
+                <a href="#services">Our Mission</a>
+            </li>
+            <li>
+                <a href="#portfolio">Upcoming Events</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
         </ul>
-    </div>
+    </nav>
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <div id="eraceImage" class="img-responsive"></div>
+        </div>
+    </header>
 
-    <div id="content" ng-view></div>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>About Us</h2>
+                    <hr class="large">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-left lead">
+                                ERACE Cancer is a group of students and researchers working to Establish Race And Class Equality in cancer. We lead educational and outreach initiatives focused on cancer prevention in at-risk populations in the Bay Area.</p>
+                                <p class="text-left"> In addition, we serve as a forum for discussions on the social determinants of health and the societal fac- tors that shape access to adequate healthcare.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <img class="img-portfolio img-responsive" src="img/dave.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <section id="closing" class="col-md-12">© 2014 ERACE, Inc.</section>
-    </footer>
-</div>
+        <!-- Services -->
+        <section id="services" class="services bg-primary">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Our Mission</h2>
+                        <hr class="large"> 
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="service-item col-md-12">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-signal fa-stack-1x text-primary"></i>
+                                    </span>
+                                    <h4>
+                                        <strong>Outreach</strong>
+                                    </h4>
+                                    <p class="text-left bot-mar-5">• Organize cancer screenings</p>
+                                    <p class="text-left bot-mar-5">• Attend local health fairs</p>
+                                    <p class="text-left bot-mar-5">• Build a network of community physicians</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="service-item col-md-12">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-leaf fa-stack-1x text-primary"></i>
+                                    </span>
+                                    <h4>
+                                        <strong>Education</strong>
+                                    </h4>
+                                    <p class="text-left bot-mar-5">• Create a preventative health forum</p>
+                                    <p class="text-left bot-mar-5">• Attend national conferences</p>
+                                    <p class="text-left bot-mar-5">• Organize speaking events</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="service-item col-md-12">
+                                    <span class="fa-stack fa-4x">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-group fa-stack-1x text-primary"></i>
+                                    </span>
+                                    <h4>
+                                        <strong>Awareness</strong>
+                                    </h4>
+                                    <p class="text-left bot-mar-5">• Build educational modules</p>
+                                    <p class="text-left bot-mar-5">• Publish research generated by outreach projects</p>
+                                    <p class="text-left bot-mar-5">• Create patient-focused informational materials</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="scripts/polyfill.js"></script>
-<script src="scripts/smooth-scroll.js"></script>
-<script src="scripts/angular-min.js"></script>
-<script src="scripts/angular-routes-min.js"></script>
-<script src="scripts/app.js"></script>
-<script>
-    smoothScroll.init();
+        <!-- Portfolio -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h2>Upcoming Events</h2>
+                        <hr class="large">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <img class="img-responsive" src="img/aacr.png">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>ERACE Cancer presents at AACR<br><small>April 22 at 8:00AM</small></h2>
+                                
+                                <p class="lead">
+                                    PA Convention Center: 1101 Arch St, Philadelphia, PA
+                                    The ERACE Cancer team is presenting original research at the American Association of Cancer
+                                    Research Annual Meeting.
+                                </p>
+                                <a href="pdf/abstract_aacr.pdf" class="btn btn-sm btn-dark">Read our Abstract!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-10 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+
+        <!-- contact -->
+        <section id="contact" class="section portfolio bg-primary">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Contact Us</h2>
+                        <hr class="large"> 
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="cform" id="contact-form">
+<!--                                         <div id="sendmessage">
+                                            Your message has been sent. Thank you!
+                                        </div> -->
+                                        <form action="contact/contact.php" method="post" role="form" class="contactForm text-left">
+                                            <div class="form-group">
+                                                <label for="name">Your Name</label>
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                                                <div class="validation"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Your Email</label>
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                                <div class="validation"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="subject">Subject</label>
+                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                                <div class="validation"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="message">Message</label>
+                                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                                                <div class="validation"></div>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-lg-offset-1 text-center">
+                                    <hr class="large">
+                                    <p class="text-muted">Copyright &copy; ERACE Cancer 2015</p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- jQuery -->
+                    <script src="js/jquery.js"></script>
+
+                    <!-- Bootstrap Core JavaScript -->
+                    <script src="js/bootstrap.min.js"></script>
+
+                    <!-- Custom Theme JavaScript -->
+                    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
 </script>
+
 </body>
+
 </html>
